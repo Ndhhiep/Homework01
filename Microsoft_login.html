@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập vào tài khoản Microsoft</title>
+</head>
+<body 
+    style="
+        margin: 0; 
+        height: 100vh; 
+        width: 100vw; 
+        background-image: url(background.png); 
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;    
+    "
+>
+    <div style="height: 80%; width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 8%;">
+        <div style="background-color: white; width: 440px; height: 338px; display: flex; align-items: center; justify-content: center;">
+            <div 
+                style="
+                background-color: white;
+                width: 352px;
+                height: 306px;
+                margin: 10%;
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 15px;
+                "
+            >
+                <img style="margin-top: 10%;" src="https://aadcdn.msftauth.net/shared/1.0/content/images/microsoft_logo_564db913a7fa0ca42727161c6d031bef.svg" />
+                <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Đăng nhập</h1>
+                <input style="width: 80%; height: 15%; border-top: none; border-right: none; border-left: none;" type="text" placeholder="Email, điện thoại hoặc Skype"></input>
+                <div class="container" style="justify-content: space-evenly; display: flex; flex-direction: row; align-items: center; font-size: 12px;">
+                    <h2 style="margin-right: 8px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Không có tài khoản?</h2>
+                    <a href="https://login.live.com/oauth20_authorize.srf?client_id=81feaced-5ddd-41e7-8bef-3e20a2689bb7&scope=service%3a%3aaccount.microsoft.com%3a%3aMBI_SSL+openid+profile+offline_access&redirect_uri=https%3a%2f%2faccount.microsoft.com%2fauth%2fcomplete-signin-oauth&response_type=code&state=H4sIAAAAAAAEAA3My6JCQAAA0H9pa-FtWLQYI49GXEVkl7cSI82l-fp7zwecnSbbAngIQYGQXkXhuD3x-GAo7P0JZ_opsQcwTqnaDgGvdapb0xdOzmj1uSN-xGlRhTyHNUOL8oP2W3llT_pq1e1-zo32swgnVpT1ekoR6ERPVjDxUuhcnLuymJr4ojfLVSPZ7tlQMDAKOL4v26iQqJxJComupDG1YLOBuKQ_XeluoEhimYSUo9fmxTy5HFTOuIoupm6eHJ_W7BfHVh-9Jgz4nGUO-YrnDGa80gM5sFG41Eno3xri4BKw0Q7cyaz02mSclOWfe_6uLKGfVUl0ZSh2VaFeYglOUP4Kt4O0AYCabqUw73RjbDPr217NA_kPWY34S4feixVo70iyqQL3-90fVZThWFoBAAA&prompt=login&x-client-SKU=MSAL.Desktop&x-client-Ver=4.45.0.0&uaid=e0d249c697174d4c96352e01623e002f&msproxy=1&issuer=mso&tenant=common&ui_locales=en-US&client_info=1&signup=1&lw=1&fl=easi2&epct=PAQABAAEAAAD--DLA3VO7QrddgJg7WevrXZ9-JTVbrq4H6-CYH7H4UHcB7AyzQ6eIngHsAN0QDzHn9JY6kIB3XmJL8rn0KZOLs8EXj7YSOS0yTOAdxntQ8qlNaXXKVg8fKS7uwPoslcXj_R__50GBL-v2ikGKXxMdzLA4TTTyppigYNViAdIjYUZd0_0oO6nMQCIb-VR4QI30cl8n7B89j9zZEr_TdAtv1ZltV6Xo_qzhRhiULgyHmSAA&jshs=0">Tạo tài khoản!</a>
+                </div>
+                <div class="container" style="display: flex; justify-content: first baseline; align-items: center; font-size: 12px; width: 320px;">
+                    <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=service%3A%3Aaccount.microsoft.com%3A%3AMBI_SSL+openid+profile+offline_access&response_type=code&client_id=81feaced-5ddd-41e7-8bef-3e20a2689bb7&redirect_uri=https%3A%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-signin-oauth&client-request-id=e0d249c6-9717-4d4c-9635-2e01623e002f&x-client-SKU=MSAL.Desktop&x-client-Ver=4.45.0.0&x-client-CPU=x64&x-client-OS=Windows+Server+2019+Datacenter&prompt=login&client_info=1&state=H4sIAAAAAAAEAA3My6JCQAAA0H9pa-FtWLQYI49GXEVkl7cSI82l-fp7zwecnSbbAngIQYGQXkXhuD3x-GAo7P0JZ_opsQcwTqnaDgGvdapb0xdOzmj1uSN-xGlRhTyHNUOL8oP2W3llT_pq1e1-zo32swgnVpT1ekoR6ERPVjDxUuhcnLuymJr4ojfLVSPZ7tlQMDAKOL4v26iQqJxJComupDG1YLOBuKQ_XeluoEhimYSUo9fmxTy5HFTOuIoupm6eHJ_W7BfHVh-9Jgz4nGUO-YrnDGa80gM5sFG41Eno3xri4BKw0Q7cyaz02mSclOWfe_6uLKGfVUl0ZSh2VaFeYglOUP4Kt4O0AYCabqUw73RjbDPr217NA_kPWY34S4feixVo70iyqQL3-90fVZThWFoBAAA&msaoauth2=true&lc=1033">Đăng nhập bằng Windows Hello hoặc khóa bảo mật</a>
+                    <img src="questionmark.png"/>
+                </div>
+                <div class="container" style="justify-content: flex-end; display: flex; flex-direction: row; align-items:center; width: 100%; height: 30%; ">
+                    <button style="margin: 3px; width: 25%; height: 40%; background-color: #0067b8; color: aliceblue;">Tiếp theo</button>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: white; width: 440px; height: 48px; align-items: center; justify-content: center; display: flex; margin-top: 15px;">
+            <div style="background-color: white; width: 380px; height: 32px; align-items: center; justify-content: center; display: flex; flex-direction: row;">
+                <img style="width: 32px; height: 32px;" src="key.png"/>
+                <button style="background-color: white; width: 80%; border: none; text-align: left; font-size: 15px;">Tùy chọn đăng nhập</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" style="width: 100%; height: 20%; display: flex; justify-content: flex-end; justify-content: end; align-items: flex-end; flex-direction: row; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 12px; margin-bottom: 10px;">
+        <a style="margin-right: 20px; color: black;" href="https://aadcdn.msauth.net/ests/2.1.15811.5/content/agreements/tou/vi/tou.txt">Điều khoản sử dụng</a>
+        <a style="margin-right: 20px; color: black;" href="https://aadcdn.msauth.net/ests/2.1.15811.5/content/agreements/privacy/vi-vn/privacy.txt">Quyền riêng tư & cookie</a>
+        <a style="margin-right: 20px; color: black;" href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=service%3A%3Aaccount.microsoft.com%3A%3AMBI_SSL+openid+profile+offline_access&response_type=code&client_id=81feaced-5ddd-41e7-8bef-3e20a2689bb7&redirect_uri=https%3A%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-signin-oauth&client-request-id=372ef7aa-a229-4dd7-8737-1a08168a1e6a&x-client-SKU=MSAL.Desktop&x-client-Ver=4.45.0.0&x-client-CPU=x64&x-client-OS=Windows+Server+2019+Datacenter&prompt=login&client_info=1&state=H4sIAAAAAAAEAAXBy5ZDMAAA0H_p1iJFR2UZziQ4pC1DsVMliKZVj-Dr595DGiNgC_0BKi8PYShvuBPDRGQViRIQZIBi659AndAu9XvgD_4VN38X_a489_UjeP7qKJm83a114pSLw7OUpTapJM5ewSJ9PZoAE6fQ0BaTrVYcCEDrcie3QuHNxqm1eHOQTyovj2pnGrXoaZaRaGPiuDS9bFznu1jYdC0dr4NACYVjTRL0eDLtsV7iK3OYps_vOW_hKFhL6fnbO-4HK7y8JWaKFLQ2xVGttEzykixGf_potDANO1Tiu-aTxoqnppuh95txE1gM9-vXGSHUthB7Kq4jZ4gw9MEZll4bs2Qq2nB_9_NPAhAaeT0c_gEclKAyQgEAAA&msaoauth2=true&lc=1066&sso_reload=true#">...</a>
+    </div>
+</body>
+</html>
